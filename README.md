@@ -30,6 +30,7 @@ connect to database as root and create a user guacamole, database guacamole_db, 
 Database is ready, go to your control plane in k8s cluster.
 
 git clone https://github.com/LuckyNumber17/k8s-guacamole/
+
 cd k8s-guacamole
 nano deployment.yml
 
@@ -52,4 +53,4 @@ Change the database connection settings at the end of the file
           - name: MYSQL_DRIVER
             value: "mysql"
 
-Save the file, then create the deployment. The deployment uses NodePort to expose the guacamole client on port 30088, after the pods startup go to http://<your-worker-ip-node>:30088/guacamole, default creds are: guacadmin/guacadmin
+Save the file, then create the deployment. The deployment uses NodePort to expose the guacamole client on port 30088, after the pods startup go to http://[your-worker-ip-node]:30088/guacamole, default creds are: guacadmin/guacadmin
