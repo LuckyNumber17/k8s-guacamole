@@ -8,8 +8,10 @@ prerequisites:
 Prepare the Database
 
 Download DB Extension to your MySQL machine:
-    wget https://wiki.orticongroup.ru/files/Distrib/guacamole/guacamole-auth-jdbc-1.5.5.tar.gz 
+    wget https://wiki.orticongroup.ru/files/Distrib/guacamole/guacamole-auth-jdbc-1.5.5.tar.gz
+    
     tar -xf guacamole-auth-jdbc-1.5.5.tar.gz
+    
     cd guacamole-auth-jdbc-1.5.5.tar.gz/schema
 
 Inside this folder there will be 2 .sql files that set up the DB schema and create admin user, you will need them to prepare the DB in the following steps
